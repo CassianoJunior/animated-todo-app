@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { AboutScreen } from './screens/AboutScreen';
-import { MainScreen } from './screens/Main';
+import { MainScreen } from './screens/MainScreen';
 
 const Drawer = createDrawerNavigator();
 
