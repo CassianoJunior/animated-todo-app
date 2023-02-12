@@ -3,6 +3,7 @@ import { Fab, Icon, useColorModeValue, VStack } from 'native-base';
 import { useCallback, useState } from 'react';
 import shortid from 'shortid';
 import { AnimatedColorBox } from '../components/AnimatedColorBox';
+import { Masthead } from '../components/masthead';
 import { TaskItemData, TaskList } from '../components/TaskList';
 import { ThemeToggle } from '../components/ThemeToggle';
 
@@ -65,6 +66,11 @@ const MainScreen = () => {
       w="full"
       flex={1}
     >
+      <Masthead
+        title="What's up, Cassiano!"
+        image={require('../assets/masthead.png')}
+        children
+      />
       <VStack space={5} alignItems="center" w="full">
         <TaskList
           data={data}
