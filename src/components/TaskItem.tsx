@@ -78,7 +78,7 @@ const TaskItem = ({
       backView={
         <Box
           w="full"
-          h="full"
+          h="90%"
           bg="red.500"
           alignItems="flex-end"
           justifyContent="center"

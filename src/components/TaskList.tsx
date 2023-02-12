@@ -1,12 +1,9 @@
-import { useCallback, useRef } from 'react';
-
 import { AnimatePresence, View } from 'moti';
-
+import { useCallback, useRef } from 'react';
 import {
   PanGestureHandlerProps,
   ScrollView,
 } from 'react-native-gesture-handler';
-
 import { makeStyledSystemPropsResolver } from '../utils/styled';
 import { TaskItem } from './TaskItem';
 
@@ -103,7 +100,7 @@ const TaskList = ({
   onRemoveItem,
   onToggleItem,
 }: TaskListProps) => {
-  const refScrollView = useRef<ScrollView>(null);
+  const refScrollView = useRef(null);
 
   return (
     <StyledScrollView ref={refScrollView} w="full">
