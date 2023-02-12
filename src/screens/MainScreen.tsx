@@ -1,7 +1,8 @@
 import { AntDesign } from '@expo/vector-icons';
-import { Center, Fab, Icon, useColorModeValue, VStack } from 'native-base';
+import { Fab, Icon, useColorModeValue, VStack } from 'native-base';
 import { useCallback, useState } from 'react';
 import shortid from 'shortid';
+import { AnimatedColorBox } from '../components/AnimatedColorBox';
 import { TaskItemData, TaskList } from '../components/TaskList';
 import { ThemeToggle } from '../components/ThemeToggle';
 
@@ -21,8 +22,6 @@ const initialData = [
 const MainScreen = () => {
   const [data, setData] = useState(initialData);
   const [editingItemId, setEditingItemId] = useState<string | null>(null);
-
-  const [subject, setSubject] = useState('Task Item');
 
   const handleToggleTaskItem = useCallback((item: TaskItemData) => {
     setData((prevData) => {
@@ -45,7 +44,7 @@ const MainScreen = () => {
     []
   );
 
-  const handleFinishEditingTaskItem = useCallback((item: TaskItemData) => {
+  const handleFinishEditingTaskItem = useCallback(() => {
     setEditingItemId(null);
   }, []);
 
@@ -61,10 +60,9 @@ const MainScreen = () => {
   }, []);
 
   return (
-    <Center
-      _dark={{ bg: 'blueGray.900' }}
-      _light={{ bg: 'blueGray.50' }}
-      px={4}
+    <AnimatedColorBox
+      bg={useColorModeValue('warmGray.50', 'primary.900')}
+      w="full"
       flex={1}
     >
       <VStack space={5} alignItems="center" w="full">
@@ -92,7 +90,7 @@ const MainScreen = () => {
           setEditingItemId(id);
         }}
       />
-    </Center>
+    </AnimatedColorBox>
   );
 };
 
