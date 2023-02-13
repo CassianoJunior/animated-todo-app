@@ -3,8 +3,8 @@ import { Fab, Icon, useColorModeValue, VStack } from 'native-base';
 import { useCallback, useState } from 'react';
 import shortid from 'shortid';
 import { AnimatedColorBox } from '../components/AnimatedColorBox';
-import { Masthead } from '../components/masthead';
-import { Navbar } from '../components/NavBar';
+import { Masthead } from '../components/Masthead';
+import { Navbar } from '../components/Navbar';
 import { TaskItemData, TaskList } from '../components/TaskList';
 
 const initialData = [
