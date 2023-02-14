@@ -4,6 +4,8 @@
 
 The animated checkbox is a modify version from NPM module published from project owner available on [react-native-checkbox-reanimated](https://github.com/craftzdog/react-native-checkbox-reanimated)
 The changes were applied because the module has an inexpected behavior on stroke color transition
+
+
 ![Checkbox-animation](https://gist.githubusercontent.com/CassianoJunior/3ea88e027bdb0fb8b239ba9f38cebdef/raw/9e28ebde545e5c685480567d096665832d728cb2/checkbox-animation.gif)
 
 ## Video watched
