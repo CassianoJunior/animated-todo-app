@@ -12,6 +12,9 @@ The changes were applied because the module has an inexpected behavior on stroke
 
 Watch how built in his YouTube channel: [<img width='32px' src='https://raw.githubusercontent.com/gist/CassianoJunior/3ea88e027bdb0fb8b239ba9f38cebdef/raw/25796d1b7cfc515d4d73851a88253ed0558db7d9/youtube-icon.svg' />](https://www.youtube.com/watch?v=k2h7usLLBhY)
 
+## Demo video
+
+[Video](https://youtu.be/X55u3ICCekc)
 
 ## Stack
 
